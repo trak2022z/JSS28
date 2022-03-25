@@ -1,0 +1,48 @@
+html {
+    font-family: monospace;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+body, main, section, div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    flex-basis: 100%;
+}
+
+main img {
+    max-height: 40vh;
+}
+
+section {
+    justify-content: space-evenly;
+    flex-basis: 100%;
+}
+
+footer {
+    flex-basis: 10%;
+    font-size: 18px;
+}
+
+.pizza img {
+    max-height: 15vh;
+    cursor: pointer;
+}
+
+.pizza .inactive {
+    filter: grayscale(1);
+    cursor: initial;
+}
+
