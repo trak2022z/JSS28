@@ -47,13 +47,26 @@
         }
 
         function payExecutor(resolve, reject) {
+
+          let money = true;
+          //let money = false;
+          
           bill.addEventListener('click', function() {
             console.log("paying bill");
+            if(money){
             setTimeout(function() {
               console.log("all done");
               resolve();
             }, 3000);
+            } else {
+              setTimeout(function() {
+              console.log("problem");
+              reject();
+            }, 3000);
+            }
+            
           });
+  
         }
     }
 
